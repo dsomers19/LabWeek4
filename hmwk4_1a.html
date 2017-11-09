@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <!--
+Given the following arrays
+1. let names = ['Andrew', 'Harry', 'Alex', 'Michael', 'Jack', 'Mickey'];  // strings
+
+2. let ages = [45, 18.5, 9, 20, 90];  // integers (numeric)
+
+3. let scores = [45.45, 19.50, 20.11, 98.23, 100.00]; // floats (numeric)
+
+
+Using the forEach method on each array above, iterate and console.log() each value.
+array.forEach(function(currentValue, index, arr), thisValue)  where currentValue is the value of the element in the array
+    -->
+    <head>
+ <title></title>
+    </head>
+    <body>
+<h3>This page will print all values to console.log<br/>
+Please look there for output. </h3>
+
+<script>
+
+//var names = ['Andrew', 'Harry', 'Alex', 'Michael', 'Jack', 'Mickey'];  // strings
+//myFunction(names);
+
+//var ages = [45, 18.5, 9, 20, 90];  // integers (numeric)
+//myFunction(ages);
+
+//var scores = [45.45, 19.50, 20.11, 98.23, 100.00]; // floats (numeric)
+//myFunction(scores);
+
+function printToConsole(ele1) {
+    var b = typeof(ele1);
+    console.log ("Array element is type: " + b + "and value: " + ele1);
+}
+
+function myFunction() {
+    var names = ['Andrew', 'Harry', 'Alex', 'Michael', 'Jack', 'Mickey'];  // strings
+    names.forEach(printToConsole(names));
+
+    var ages = [45, 18.5, 9, 20, 90];  // integers (numeric)
+    ages.forEach(printToConsole(ages));
+
+    var scores = [45.45, 19.50, 20.11, 98.23, 100.00]; // floats (numeric)
+    scores.forEach(printToConsole(scores));    
+}
+// function myFunction(item, index, arr) {
+//    arr[index] = item * document.getElementById("multiplyWith").value;
+//    demo.innerHTML = numbers;
+//call the function
+myFunction();
+
+</script>
+    </body>
+    </html>
